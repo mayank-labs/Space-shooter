@@ -1,0 +1,13 @@
+cd /Users/mayank/Desktop/SPACE_SHOOTER
+
+SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
+
+clang++ -std=c++11 \
+  -isysroot "$SDK" \
+  -mmacosx-version-min=15.0 \
+  main.cpp \
+  -o space-shooter \
+  -framework GLUT \
+  -framework OpenGL
+
+./space-shooter
